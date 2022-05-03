@@ -1,4 +1,20 @@
-<h1>Home Page</h1>
-
-<%= link_to 'Articles Listing', articles_path %> |
-<%= link_to 'About Page', about_path %>
+<body class="d-flex flex-column">
+  <div id="page-content">
+    <div class="container" id="homeHero">
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-white">Alpha Blog</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 text-white">Welcome to alpha blog</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-success btn-lg px-4 gap-3">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; <%= link_to "Jake Plassmeyer", "https://plassy4.com", class: "text-white" %></small>
+    </div>
+  </footer>
+</body>
